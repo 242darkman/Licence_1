@@ -1,0 +1,111 @@
+                        /**********************************************
+                         *Structure et aspect contenu (main et body)
+                         *********************************************/
+main {
+    max-width: 800px;
+    margin: auto;
+    background-color: azure;
+}
+
+body {
+    background-image: url(../images/audi_paris.gif)
+}
+
+
+                        /********************************************
+                         * Aspect des titres de niveau 2 et 3 
+                         ********************************************/
+h2 {
+    text-decoration: overline underline;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+    color: darkcyan;
+    font-family: "Curlz MT", fantasy;
+}
+
+h3 {
+    text-align: center;
+    border: 8px solid darkcyan;
+}
+
+
+                    /*********************************************
+                     * Aspect des paragraphes de section 
+                     *********************************************/
+section p {
+    text-align: justify;
+    margin: 40px;
+}
+
+
+                     /*****************************
+                      * Légende des images
+                      *****************************/
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+
+                   /**************************************
+                    * Aspect des liens
+                    **************************************/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+                        /********************************************
+                         *Aspect au survol des titres de niveau 3
+                         ********************************************/
+h3:hover {
+    background-color: darkcyan;
+    color: whitesmoke;
+}
+
+
+                      /*****************************
+                       * Aspect des liens au survol
+                       *****************************/
+a:hover {
+    color: #181aaa;
+    background-color: white;
+    text-decoration: #181aaa wavy underline;
+}
+
+
+                                        /************************************************** 
+                                         * Style des sources situé dans le pied de page 
+                                         **************************************************/ 
+.sources {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sources img {
+    max-width: 100%;
+}
+
+.sources figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+h6 {
+    text-align: center;
+    color: azure;
+    text-decoration: underline overline;
+    padding-top: 35px;
+    font-size: large;
+}
+
+#audi {
+    background-color: white;
+}

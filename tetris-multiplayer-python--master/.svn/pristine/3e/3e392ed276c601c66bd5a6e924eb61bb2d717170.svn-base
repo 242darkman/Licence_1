@@ -1,0 +1,130 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\title{PROJET DE CONCEPTION LOGICIEL}
+\subtitle{Développement d'un Tetris d'un multijoueur}
+% \date{\today}
+\date{}
+\author{VOUVOU Brandon \and KABLAN Yoann \and KASENGA Deborah \and DEDEFA Suzana}
+\institute{Université de Caen Normandie}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Table de matière}
+  \setbeamertemplate{section in toc}[sections numbered]
+  %\tableofcontents[hideallsubsections]
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}[fragile]{Choix du sujet}
+
+
+
+  \begin{verbatim}    
+  \end{verbatim}
+
+
+\end{frame}
+
+
+
+
+\section{Organisation du projet}
+
+\begin{frame}{Planification}
+	
+\end{frame}
+
+
+
+\begin{frame}{Début de la phase de conception}
+
+
+
+\end{frame}
+
+
+\begin{frame}{Arborescence du programme}
+	
+\end{frame}
+
+
+\begin{frame}{Finalisation du projet}
+	
+\end{frame}
+
+
+
+\section{Démonstration}
+
+\begin{frame}{Présentation du jeu}
+
+\end{frame}
+
+\begin{frame}{Lancement du mode multijoueur}
+
+\end{frame}
+
+
+\begin{frame}{Lancement du mode solo}
+
+\end{frame}
+
+
+
+\section{Algorithmie}
+	\begin{frame}{Éléments communs}
+	
+	\end{frame}
+
+  
+  	\begin{frame}{Mode solo}
+  	
+  	\end{frame}
+
+  
+  
+  	\begin{frame}{Mode multijoueur}
+  	
+  	\end{frame}
+
+
+
+
+\section{Conclusion}
+
+\begin{frame}{Difficultés rencontrées}
+
+\end{frame}
+
+
+\begin{frame}{Possibles améliorations}
+
+\end{frame}
+
+
+
+\begin{frame}{Sources utilisées}
+
+  \bibliography{demo}
+  \bibliographystyle{abbrv}
+
+\end{frame}
+
+\end{document}

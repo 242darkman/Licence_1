@@ -1,0 +1,184 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\usepackage{hyperref}
+
+\title{PROJET DE CONCEPTION LOGICIEL}
+\subtitle{Développement d'un Tetris d'un multijoueur}
+% \date{\today}
+\date{}
+\author{VOUVOU Brandon \and KABLAN Yoann \and KASENGA Deborah \and DEDEFA Suzana}
+\institute{Université de Caen Normandie}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Table de matière}
+  \setbeamertemplate{section in toc}[sections numbered]
+  %\tableofcontents[hideallsubsections]
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+%\begin{frame}[fragile]{Choix du sujet}
+ %\begin{verbatim}    
+  %\end{verbatim}
+%\end{frame}
+
+
+
+
+\section{Organisation du projet}
+
+\begin{frame}{Planification}
+	\begin{itemize}
+		\item Choix du projet
+		\item Répartition des taches 
+	\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Début de la phase de conception}
+	\begin{figure}
+		\includegraphics[width=11cm]{img/d.jpg}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Arborescence du programme}
+	\begin{figure}
+		\includegraphics[width=8cm]{img/arbo.png}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Finalisation du projet}
+	\begin{itemize}
+		\item Phase de test et correction des éventuels bugs
+		\item Améliorations des interfaces
+		\item Ajout de certaines options supplémentaires
+	\end{itemize}
+\end{frame}
+
+
+
+\section{Démonstration}
+
+\begin{frame}{Présentation du jeu}
+	\begin{figure}
+		\includegraphics[width=10cm]{img/menu.png}
+		\caption{Interface lors du lancement du jeu}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Lancement du mode solo}
+	\begin{figure}
+		\includegraphics[width=10cm]{img/solo.png}
+		\caption{Interface lors du mode solo}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}
+		\includegraphics[width=10cm]{img/gameover.png}
+		\caption{Interface de fin de partie en mode solo}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Lancement du mode multijoueur}
+	\begin{figure}
+		\includegraphics[width=10cm]{img/vsn.png}
+		\caption{Interface lors du mode multijoueur}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}
+		\includegraphics[width=10cm]{multi_gameOver.png}
+		\caption{Interface de jeu lorsqu'un des deux joueurs perd en mode multijoueur}
+	\end{figure}
+\end{frame}
+
+
+
+\section{Algorithmie}
+	\begin{frame}{Éléments communs}
+		\begin{figure}
+			\includegraphics[width=8cm]{img/ARCHI_GLOBALE.jpg}
+		\end{figure}
+	\end{frame}
+
+  
+  	\begin{frame}{Mode solo}
+  		\begin{figure}
+  			\includegraphics[width=8cm]{img/mode_solo.jpg}
+  		\end{figure}
+  	\end{frame}
+
+  
+  
+  	\begin{frame}{Mode multijoueur}
+  		\begin{figure}
+		  \includegraphics[width=10cm]{img/ORGANISATION_MULTIJOUEUR.jpeg}
+	  	\end{figure}
+	  	
+	  	\begin{figure}
+	  		\includegraphics[width=8cm]{img/vsn.png}
+	  	\end{figure}
+  	\end{frame}
+
+
+
+
+\section{Conclusion}
+
+\begin{frame}{Difficultés rencontrées}
+	\begin{enumerate}
+		\item Affichage des pièces dans la grille
+		\item Descente d'une pièce dans la grille
+		\item Mise en place d'un multijoueur en local contre un joueur
+	\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Possibles améliorations}
+	\begin{itemize}
+		\item Stockage de pièces \\ 
+		\item Multijoueur local contre une IA \\
+		\item Multijoueur en réseau \\
+		\item Pièce fantôme \\
+	\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Sources utilisées}
+
+  \bibliography{demo}
+  \bibliographystyle{abbrv}
+  	\begin{itemize}
+  		\item \href{https://www.pygame.org/docs/}{Pygame (Documentation officielle)}
+  		\item \href{https://openclassrooms.com}{OpenClassrooms}
+  		\item \href{https://fr.wikibooks.org/wiki/Pygame}{Wikibooks}
+  		\item \href{https://www.supinfo.com/cours/1ADS/chapitres/08-interfaces-graphiques}{SUPINFO}
+  		\item \href{https://sciences-du-numerique.fr/tuto-pygame}{Sciences du Numérique}
+  	\end{itemize}
+
+\end{frame}
+
+\end{document}

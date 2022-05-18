@@ -1,0 +1,113 @@
+                    /*****************************
+                     * Disposition image Auguste H 
+                     *****************************/
+#aug img {
+    display: block;
+    max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+                    /*************************************** 
+                    * Images sur l'évolution des logos
+                    ***************************************/
+aside img {
+    width: 100%;
+}
+
+aside figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto
+}
+
+                    /************************************  
+                     * Disposition de la balise aside
+                     ************************************/
+aside {
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 15px;
+	justify-content: center;
+    padding-bottom: 40px;
+}
+
+
+
+                                /********************************
+                                 * Ajout contenu h3  
+                                 ********************************/
+h3::before, h3::after {
+    content: url(../images/233931001543754300.gif)
+}
+
+                            /************************************
+                             * Aspect au survol des logos 
+                             ************************************/
+
+aside figure:hover figcaption {
+    color: teal;
+}
+
+
+                        /***************************************************************
+                         * Aspect des paragraphes au survol des titres de niveau 3
+                         ***************************************************************/
+h3:hover +p, h3:hover +p +p {
+    background-color: teal;
+    color: whitesmoke;
+    border: 2.5px dotted aqua;
+    padding: 8px 6px 8px 6px;
+}
+
+                           /**************************************
+                            * Responsive Design
+                            **************************************/
+@media (max-width: 800px) {
+  h1 {
+        font-size: 100%;
+    }
+
+    header img {
+        width: 10%;
+    }
+
+    h2 {
+        font-size: 90%;
+    }
+
+    h3 {
+        font-size: 85%;
+    }
+
+    p {
+        font-size: 75%;
+    }
+
+    footer p, h6 {
+        font-size: 60%;
+    }
+
+  h3 {
+    border-width: 2.5px;
+  }
+
+  figcaption {
+    font-size: 55%;
+  }
+
+  aside {
+    grid-template-columns: 1fr;
+    width: 55%;
+    padding-left: 22%;
+  }
+
+}
+
+
+
+

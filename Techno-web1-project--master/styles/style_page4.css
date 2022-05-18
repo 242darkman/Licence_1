@@ -1,0 +1,227 @@
+						/*********************************************************
+						 * 				Aspect des tableaux
+						 ********************************************************/
+
+				/*************************************************************
+				 * Bordure pour toutes les cellules & autres modifications
+				 ************************************************************/
+td, th {
+	border: 2px solid dimgray;
+	text-align: center;
+	padding: 8px;
+}
+
+				/************************************
+				 * Collage des bordures du tableau 
+				 ***********************************/
+table {
+	border-collapse: collapse;
+	margin: auto;
+}
+
+				/********************************
+				 * Position du titre de tableau 
+				 ********************************/
+caption {
+	caption-side: bottom;
+	font-size: small;
+}
+
+
+				/*******************************************
+				 * Coloration des colonnes du tableau 1
+				 *******************************************/
+.tab1 td:nth-of-type(1) {
+	background-color: cadetblue;
+}
+
+.tab1 td:nth-of-type(2) {
+	background-color: chocolate;
+}
+
+
+				/****************************************************
+				 * Famille sans-serif pour les colonnes td 1 et 2
+				 ****************************************************/
+.tab1 td:nth-of-type(1), .tab1 td:nth-of-type(2) {
+	font-family: sans-serif;
+}
+
+
+						/******************************************
+						 * Image zone de recharge de l'audi e-tron
+						 ******************************************/
+.recharge {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: darkseagreen;
+}
+
+.recharge figure {
+	border: 8px solid #c0c0c0;
+    display: flex;
+    flex-flow: column;
+}
+
+
+
+						/**********************
+						 * 		Images
+						 **********************/
+img {
+	width: 100%;
+}
+
+						/********************************
+						 * Aspect galerie d'images
+						 ********************************/
+aside {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 13px;
+	background-color: #b7edfc;
+	margin-top: 22px;
+	margin-bottom: 8px;
+	border: 4px solid lightblue;
+}
+
+aside img{
+     width:180px;
+     height:120px;
+     z-index:20;
+     transition-property:width,height,z-index;
+     transition-duration:0.4s;
+     border: 6px solid dimgray;
+	 box-sizing: border-box;
+}
+
+aside figure:hover img{
+     /*max-*/width:100%;
+     height:210px;
+     z-index:100;
+}   
+
+							/*******************************************************************************************************
+							 * Espacement entre le tableau d'estimation du temps de charge et les images de la zone de recharge
+							 *******************************************************************************************************/
+.tab2 {
+	padding-top: 10px;
+}
+
+
+							/***********************************************
+							 * Aspect de l'article de classe "pikes-peak"
+							 ***********************************************/
+.pikes-peak {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 8px; 
+	padding-left: 15%;
+}
+
+#arch_bat {
+	width: 99.7%;
+}
+
+#pikes-peak1 figure {
+	width: 46.1%;
+}
+
+
+							/*******************************************************************
+							 * Personnalisation des items (puces) des listes et autres modifications
+							 ******************************************************************/
+.liste {
+	list-style-image: url(../images/975291001543969003.gif);
+	list-style-position: inside;
+	text-align: justify;
+	padding-right: 38px;
+	background-color: cadetblue;
+}
+
+.liste p {
+	display: inline;
+	margin: 0;
+	font-weight: bold;
+	background-color: white;
+}
+
+
+
+							/*******************************************************************
+							 * Couleur des premiers paragraphes après les titres de niveau 3
+							 *******************************************************************/
+h3 + p {
+	background-color: lightgreen;
+}
+
+
+							/***********************************************
+							 * Aspect du titre de niveau 4
+							 ***********************************************/
+h4 {
+	margin-top: 75px;
+	text-align: center;
+	text-transform: uppercase;
+	border: 2px solid;
+	max-width: 50%;
+	margin-left: 30%;
+	margin-right: 30%;
+	background-color: #b7edfc;
+	color: cornflowerblue;
+}
+
+
+						   /**************************************
+						    * Responsive Design
+						    **************************************/
+@media (max-width: 800px) {
+	h1 {
+    	font-size: 100%;
+  	}
+
+  	header img {
+    	width: 10%;
+  	}
+
+  	h2 {
+    	font-size: 90%;
+  	}
+
+  	h3 {
+    	font-size: 85%;
+    	border-width: 2.5px;
+  	}
+
+  	h4 {
+  		font-size: 70%;
+  	}
+
+  	p, .liste li {
+    	font-size: 75%;
+  	}
+
+  	footer p, h6 {
+    	font-size: 60%;
+  	}
+
+  	figcaption {
+    	font-size: 55%;
+  	} 
+
+	img {
+		width: 120%;
+	}
+
+	td, th {
+		font-size: 70%;
+	}
+
+	aside {
+        overflow: auto;
+    } 
+
+    .pikes-peak {
+    	padding-right: 20%;
+    }
+}

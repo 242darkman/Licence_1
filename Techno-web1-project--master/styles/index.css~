@@ -1,0 +1,371 @@
+											/* Famille police */
+html
+{
+	background-image: linear-gradient(#A2B5BF, #E1E6FA);
+	font-style: italic;
+}
+
+@font-face
+{
+	font-family: CMUSerifRoman;
+	src: url(styles/cmu-serif/Serif/cmunti.woff);
+}
+
+/* Menu */
+#menu-accueil, #menu-accueil ul
+{
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:center;
+}
+
+#menu-accueil li
+{
+	display:inline-block;
+	position:relative;
+	border-radius:8px 8px 0 0;
+}
+
+#menu-accueil ul li
+{
+	display:inherit;
+	border-radius:0;
+}
+
+#menu-accueil ul li:hover
+{
+	border-radius:0;
+}
+
+#menu-accueil ul li:last-child
+{
+	border-radius:0 0 8px 8px;
+}
+
+#menu-accueil ul
+{
+	position:absolute;
+	z-index: 1000;
+	max-height:0;
+	left: 0;
+	right: 0;
+	overflow:auto;
+	-moz-transition: .8s all .3s;
+	-webkit-transition: .8s all .3s;
+	transition: .8s all .3s;
+}
+
+#menu-accueil li:hover ul
+{
+	max-height:15em;
+}
+
+/* Arrière-plan des liens des menus */
+#menu-accueil li:first-child
+{
+	background-color: #65537A;
+	background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
+	background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+}
+
+#menu-accueil li:nth-child(2)
+{
+	background-color: #729EBF;
+	background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+	background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+
+#menu-accueil li:nth-child(3)
+{
+	background-color: #F6AD1A;
+	background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #9F391A 100%);
+	background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+}
+
+#menu-accueil li:nth-child(4)
+{
+	background: #69e8ff;
+	background-image: -webkit-linear-gradient(top, #ffaf69 0%, #ffd769 100%);
+background-image: linear-gradient(to bottom, #ffaf69 0%, #ffd769 100%) }
+
+#menu-accueil li:last-child
+{
+	background-color: #CFFF6A;
+	background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+	background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+
+
+/* Arrière-plan des liens des sous menus */
+#menu-accueil li:first-child li
+{
+	background:#2A2333;
+}
+
+#menu-accueil li:nth-child(2) li
+{
+	background:#333A40;
+}
+
+#menu-accueil li:nth-child(3) li
+{
+	background:#9F391A;
+}
+
+#menu-accueil li:nth-child(4) li
+{
+	background:#ffaf69;
+}
+
+#menu-accueil li:last-child li
+{
+	background:#677F35;
+}
+
+/* background des liens menus et sous menus au survol */
+#menu-accueil li:first-child:hover, #menu-accueil li:first-child li:hover
+{
+	background:#65537A;
+}
+
+#menu-accueil li:nth-child(2):hover, #menu-accueil li:nth-child(2) li:hover
+{
+	background:#729EBF;
+}
+
+#menu-accueil li:nth-child(3):hover, #menu-accueil li:nth-child(3) li:hover
+{
+	background:#F6AD1A;
+}
+
+#menu-accueil li:nth-child(4):hover, #menu-accueil li:nth-child(4) li:hover
+{
+	background: #ffaf69;
+}
+
+#menu-accueil li:last-child:hover, #menu-accueil li:last-child li:hover
+{
+	background:#CFFF6A;
+}
+
+/* Les liens des menus */
+#menu-accueil a
+{
+	text-decoration:none;
+	display:block;
+	padding:8px 32px;
+	color:#fff;
+	font-family:arial;
+}
+
+#menu-accueil ul a
+{
+	padding:8px 0;
+}
+
+#menu-accueil li:hover li a
+{
+	color:#fff;
+	text-transform:inherit;
+}
+
+#menu-accueil li:hover a, #menu-accueil li li:hover a
+{
+	color:#000;
+}
+
+/* Structure entête et titre */
+header, footer
+{
+	background-image: url(../images/S1-audi-e-tron-l-electro-quattro-video-live-et-photos-563544.jpg);
+}
+
+header img
+{
+	width: 8%;
+}
+
+h1
+{
+	text-align: center;
+	font-style: italic;
+	color: darkred;
+	text-shadow: 8px 8px 6px darkgrey;
+	font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+	font-size: xx-large;
+}
+
+/* Structure corps de la page et des titres */
+body
+{	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h3
+{
+	text-align: center;
+	text-indent: 3%;
+	border: double;
+	margin-left: 100px;
+	margin-right: 100px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+h4,h5 {	text-align: left;;
+			text-indent: 3%;
+			margin-left: 100px;
+			margin-right: 100px;
+	 
+}
+
+
+p
+{
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: justify;
+}
+
+main
+{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: 
+		 "header header"
+		 "aside section";
+}
+
+
+a
+{
+	text-decoration: none;
+}
+
+									/* Barre latérale */
+aside
+{
+	display: block;
+	grid-template-columns: 1fr;
+	border: solid #8CADD0;
+	margin-top: 4%;
+	position: relative;	
+	border-width: thin;
+}
+
+aside p 
+{
+	padding-top: 100px;
+}
+
+#bl ul
+{
+	list-style-type: none;
+	margin-left: -19px;
+	margin-right: 49px;
+	font-size: smaller;
+}
+
+#bl {	background-color: whitesmoke;
+}
+
+#bl p
+{
+	display: inline-block;
+	text-decoration: rgb(18, 80, 116);
+	font-weight: bold;
+    margin: 0;
+	padding: 0; 
+}
+
+#bl h3
+{
+	text-align: center;
+	border: double;
+	margin-left: 100px;
+	margin-right: 100px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+aside img {	max-width: 300px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 3%;
+			padding-left: 69px;
+			justify-self: center;
+}
+
+.blf {		display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			
+}
+
+.blf figure { 	
+	margin-left: auto;
+	margin-right: 75px;
+}
+
+
+								/* Images */
+section figure
+{
+	border-style: solid;
+	border-color: grey;
+	width: 40%;
+	box-sizing: border-box;
+	padding: 1%;
+	margin-right: 20px;
+	margin: auto;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+figure figcaption
+{
+	font-size: small;
+	text-align: right;
+	font-style: italic;
+}
+
+
+
+video
+{
+	
+	border-style: solid;
+	border-color: grey;
+	margin-left: 250px;
+	margin-right: 50px;
+	
+}
+
+
+
+												/* Pied de page */
+
+
+footer p
+{
+	text-align: center;
+	margin:  0;
+	font-style: italic;
+	font-size: smaller;
+}
+
+figcaption, aside a {
+	color: #000;
+} 
+
+										/* Responsive design */
+img { max-width: 100%; }
+@media all and (min-width: 400px) and (max-width: 1350px)
+{
+ 		#présentation p, #présentation1 p {font-size: small;}
+} 

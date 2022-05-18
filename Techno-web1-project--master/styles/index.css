@@ -1,0 +1,221 @@
+					/****************************************************************** 
+ 						* Structure des titres de niveau 3,4,5 et des paragraphes 
+ 					*******************************************************************/
+
+h3
+{
+	text-align: center;
+	border: double;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+h4,h5 {	text-align: left;
+}
+
+h3, h4, h5 {
+	text-indent: 3%;
+}
+
+h3, h4, h5, p {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+p
+{
+	text-align: justify;
+}
+
+		                                /****************************************************
+		                                 * Structure des contenus des pages (body & main)
+		                                 ****************************************************/
+/*body
+{
+	margin: auto;
+} */
+
+main
+{
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+
+									/*******************************************
+									 * Suppression des soulignements des liens
+									 *******************************************/
+a
+{
+	text-decoration: none;
+}
+
+									/***********************************
+									 * Structure de la barre latérale 
+									 ***********************************/
+aside
+{
+	display: block;
+	border: solid #8CADD0;
+	margin-top: 4%;
+	border-width: thin;
+}
+
+aside p 
+{
+	padding-top: 100px;
+}
+
+#bl ul
+{
+	list-style-type: none;
+	margin-left: -19px;
+	margin-right: 49px;
+	font-size: smaller;
+}
+
+#bl {	background-color: whitesmoke;
+}
+
+#bl p
+{
+	display: inline-block;
+	text-decoration: rgb(18, 80, 116);
+    margin: 0;
+	padding: 0; 
+}
+
+#bl li p:nth-of-type(odd) {
+	font-weight: bolder;
+}
+
+#bl li p:nth-of-type(even) {
+	background-color: goldenrod;
+}
+
+#bl li {
+	padding-bottom: 10px;
+}
+
+.blf img {	
+	width: 300px;
+}
+
+.blf {		display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 14px;	
+			padding-bottom: 30px;		
+}
+
+
+
+
+								/***************************************
+								 * Style des images de la page 
+								 ***************************************/
+section figure
+{
+	width: 40%;
+	box-sizing: border-box;
+	padding: 1%;
+}
+
+
+img
+{
+	max-width: 100%;
+}
+
+figure figcaption
+{
+	font-size: small;
+	text-align: right;
+	background-color: dimgrey;
+	max-width: 100%;
+}
+
+.blf figure, video, section figure, aside img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+video, section figure {
+	border-style: solid;
+	border-color: grey;
+}
+
+
+
+
+												/***************************
+												 * Style du pied de page 
+												 ***************************/
+
+figcaption, aside a {
+	color: #000;
+} 
+
+
+						   /**************************************
+						    * Responsive Design (Medias Queries)
+						    **************************************/
+@media (max-width: 800px) {
+	h1 {
+		font-size: 100%;
+	}
+
+	header img {
+		width: 10%;
+		height: 10%;
+	}
+
+	h3 {
+		font-size: 90%;
+	}
+
+	h4 {
+		font-size: 85%;
+	}
+
+	h5 {
+		font-size: 80%;
+	}
+
+	p {
+		font-size: 75%;
+	}
+
+	footer p {
+		font-size: 60%;
+	}
+
+	figure figcaption {
+		font-size: 60%;
+	}
+
+
+	section h3, main p {
+		background-color: whitesmoke;
+	}
+
+	.blf img, video {
+		width: 200px;
+	}
+
+	#audi_2k16 {
+		width: 30%;
+	}
+
+	video {
+		border: 1px solid dimgray;
+		box-sizing: border-box;
+	}
+
+
+	main {
+		grid-template-columns: 1fr; 
+	}
+}
+

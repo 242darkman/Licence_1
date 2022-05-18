@@ -1,0 +1,98 @@
+                        /******************************* 
+                         *  Ajustement taille images
+                        ********************************/
+img {
+    max-width: 100%;
+}
+
+                       /*********************************
+                        * Propriété de la balise aside 
+                        *********************************/
+aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+                     /******************************
+                      * Images prototypes audi
+                      ******************************/
+aside figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+aside img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+
+                      /**********************************************
+                       * Ajout du contenu aux titres de niveau 3
+                       **********************************************/
+h3::before, h3::after {
+    content: url(../images/005207001543795853.gif);
+}
+
+
+                    /*********************************************************
+                     * Aspect des paragraphes pairs et impairs de section
+                     *********************************************************/
+section p:nth-last-of-type(even) {
+    background-color: #6F7D89;
+    color: whitesmoke;
+}
+
+section p:nth-last-of-type(odd) {
+    background-color: dimgrey;
+    color: whitesmoke;
+}
+
+
+                      
+                        /*******************************
+                         * Responsive Design
+                         *******************************/
+@media (max-width: 800px) {
+    h1 {
+    font-size: 100%;
+  }
+
+  header img {
+    width: 10%;
+  }
+
+  h2 {
+    font-size: 90%;
+  }
+
+  h3 {
+    font-size: 85%;
+    border-width: 2.5px;
+  }
+
+  p, h6 {
+    font-size: 75%;
+  }
+
+  footer p, h6 {
+    font-size: 60%;
+  }
+
+  figcaption {
+    font-size: 55%;
+  }
+
+  aside {
+        overflow: auto;
+    }
+}
+
+
+
+
+                    
